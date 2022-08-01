@@ -1,0 +1,18 @@
+class Technic():
+    __slots__ = ('name', 'price', 'availability')
+    def __init__(self,name, price, availability):
+        self.name = name
+        self.price = price
+        self.availability = availability
+    def sorting(self):
+
+        operator= print('expensive') if self.price > 1000 else print('cheap')
+
+
+
+
+
+if __name__ == '__main__':
+
+    a=Technic('name',10000,True)
+    a.sorting()
