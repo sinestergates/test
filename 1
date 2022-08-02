@@ -1,18 +1,41 @@
+
+
+def decor(class_tech):
+    def func():
+        list=[]
+        array = [(class_tech('name_1235',5860,True)),(class_tech('name_1',678,False)),(class_tech('name_1`e2312',100,True))]
+        for i in range(len(array)):
+            cal_class=array[i]
+            arr_append=cal_class.__len__()
+            list.append(arr_append)
+        name= max(enumerate(list))[0]
+        max_name=array[name].name
+        print(f'Максимальное количество символов {max(list)}, это имя : {max_name}')
+
+    return func()
+
+
+@decor
 class Technic():
     __slots__ = ('name', 'price', 'availability')
     def __init__(self,name, price, availability):
         self.name = name
         self.price = price
         self.availability = availability
-    def sorting(self):
 
-        operator= print('expensive') if self.price > 1000 else print('cheap')
+    '''def sorting(self):
 
+        operator= print('expensive') if self.price > 1000 else print('cheap')'''
+
+    def __len__(self):
+
+        return len(self.name)
 
 
 
 
 if __name__ == '__main__':
+    pass
+    #tec=Technic('name_1',10000,True)
+    #tec.sorting()
 
-    a=Technic('name',10000,True)
-    a.sorting()
