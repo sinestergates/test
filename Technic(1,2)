@@ -37,6 +37,8 @@ class Technic():
 
 if __name__ == '__main__':
     pass
-    #tec=Technic('name_1',10000,True)
-    #tec.sorting()
-
+    '''try:
+        tec=Technic('name_1',10000,True)
+        tec.sorting()
+    except:
+    pass'''
