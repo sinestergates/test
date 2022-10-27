@@ -16,7 +16,7 @@ technic = [('Ноутбук', 1500, 'Татьяна', '89002001020'),
 
 
 def optimization():
-    # получаем все индексы совпадений34234
+    # получаем все индексы
     for i in range(len(technic)):
 
         optim = technic[i][2]
